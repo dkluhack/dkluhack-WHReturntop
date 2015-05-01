@@ -2,8 +2,8 @@
 //  UIView+Size.h
 //  FXBEST
 //
-//  Created by 孙金帅 on 15/1/12.
-//  Copyright (c) 2015年 51fanxing. All rights reserved.
+//  Created by dkluhck on 15/1/12.
+//  Copyright (c) dkluhck All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
