@@ -36,7 +36,10 @@ static NSString *ID = @"cell";
     [super viewDidLoad];
     
     [self.view addSubview:self.tableView];
-    [self AddWHReturnTop:CGRectMake(250, 400, 50, 50) BackImage:nil CallBackblock:^{
+    
+    //* 实例 */
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"fx_cart_top"]];
+    [self AddWHReturnTop:CGRectMake(250, 500, 50, 50) BackImage:imageView CallBackblock:^{
         NSLog(@"点击了按钮");
         NSIndexPath *indexpath = [NSIndexPath indexPathForRow:0 inSection:0];
         [self.tableView scrollToRowAtIndexPath:indexpath atScrollPosition:UITableViewScrollPositionTop animated:YES];

@@ -75,7 +75,6 @@ static char WHTopButtonkey;
         WHTopButton *button = [WHTopButton AddWHReturnTop:buttonCGRect BackImage:imageView CallBackblock:Callblock];
         self.Top = button;
         self.Top.frame = buttonCGRect;
-        self.Top.backgroundColor = [UIColor redColor];
         [self.Top setBackgroundImage:imageView.image forState:UIControlStateNormal];
         [self.Top addTarget:self.Top.WHReturnTopTarget action:self.Top.WHReturnTopAction forControlEvents:UIControlEventTouchUpInside];
         
