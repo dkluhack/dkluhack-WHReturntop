@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WHTopButton.h"
+#include "UIView+Size.h"
 @interface UIViewController (WHReturntop)<UIScrollViewDelegate>
 
 
