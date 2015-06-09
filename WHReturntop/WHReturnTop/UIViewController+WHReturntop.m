@@ -55,9 +55,11 @@ static char WHTopButtonkey;
     if (scrollView.isDragging == YES) {
         if (scrollView.contentOffset.y > self.Top.startContentOffsetY) {  //让开始contentoffsety值跟着scrollview.contentoffent.y相差5,
             self.Top.startContentOffsetY = scrollView.contentOffset.y - 5;
+            self.Top.startContentOffsetY = scrollView.contentOffset.y - 1;
         }
         if (scrollView.contentOffset.y < self.Top.startContentOffsetY) {
             self.Top.startContentOffsetY = scrollView.contentOffset.y + 5;
+            self.Top.startContentOffsetY = scrollView.contentOffset.y + 1;
         }
         if (self.Top.startContentOffsetY - scrollView.contentOffset.y <0) {//由于值相差5,且跟着,所以这里所减法判断的时候就知道是向上还是向下滑动了
             self.Top.hidden = YES;
