@@ -14,8 +14,6 @@
 
 static char WHTopButtonkey;
 
-
-
 -(void)setTop:(WHTopButton *)Top
 {
     if (Top != self.Top) {
@@ -52,6 +50,7 @@ static char WHTopButtonkey;
     if (scrollView.isDragging == YES) {
         if (scrollView.contentOffset.y > self.Top.startContentOffsetY) {  //让开始contentoffsety值跟着scrollview.contentoffent.y相差5,
             self.Top.startContentOffsetY = scrollView.contentOffset.y - 1;
+            
         }
         if (scrollView.contentOffset.y < self.Top.startContentOffsetY) {
             self.Top.startContentOffsetY = scrollView.contentOffset.y + 1;
